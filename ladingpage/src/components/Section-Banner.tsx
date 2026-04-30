@@ -4,22 +4,44 @@ import banner_3 from "../assets/banner-3.jpg";
 
 export function SectionBanner() {
   return (
-    <div className="flex p-10">
-      <div className="w-[550px] relative">
-        <img className="h-full w-full" src={banner_1} alt="banner 1" />
+    <div className="grid grid-cols-1 md:grid-cols-3 gap-4 p-4 md:p-10">
 
-        <div className="absolute bottom-4 left-4 flex flex-col md:text-4xl font-bold
-         text-white text-start">
-          <span>PALACE</span>
-          <span>STREET FASHION</span>
+      {/* BANNER 1 */}
+      <div className="relative w-full h-[300px] md:h-[500px]">
+        <img
+          className="w-full h-full object-cover"
+          src={banner_1}
+          alt="banner 1"
+        />
+
+        <div className="absolute bottom-4 left-4 flex flex-col text-white text-start">
+          <span className="text-xl md:text-4xl font-bold leading-none">
+            PALACE
+          </span>
+          <span className="text-lg md:text-3xl font-bold leading-none">
+            STREET FASHION
+          </span>
         </div>
       </div>
-      <div className="w-[550px]">
-        <img className="h-full w-full" src={banner_2} alt="banner 1" />
+
+      {/* BANNER 2 */}
+      <div className="w-full h-[300px] md:h-[500px]">
+        <img
+          className="w-full h-full object-cover"
+          src={banner_2}
+          alt="banner 2"
+        />
       </div>
-      <div className="w-[550px]">
-        <img className="h-full w-full" src={banner_3} alt="banner 1" />
+
+      {/* BANNER 3 */}
+      <div className="w-full h-[300px] md:h-[500px]">
+        <img
+          className="w-full h-full object-cover"
+          src={banner_3}
+          alt="banner 3"
+        />
       </div>
+
     </div>
-  )
+  );
 }

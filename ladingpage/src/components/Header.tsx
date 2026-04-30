@@ -10,7 +10,7 @@ export function Header() {
       <div className="logo w-40 h-12">
         <img className="w-full h-full object-contain" src={logo} alt="" />
       </div>
-      <div className="menu flex gap-9 text-xs">
+      <div className="menu flex gap-2 md:gap-9 text-xs">
         <span className="relative text-white cursor-pointer
           after:content-[''] after:absolute after:left-0 after:bottom-0 
           after:h-[2px] after:w-full after:bg-white 
@@ -44,7 +44,7 @@ export function Header() {
           after:transition-transform after:duration-300 
           hover:after:scale-x-100">CONTACT</span>
       </div>
-      <div className="flex gap-8">
+      <div className="flex gap-4 md:gap-8">
         <input
           type="text"
           placeholder="Buscar..."
