@@ -4,7 +4,7 @@ import card_3 from "../assets/card-3.jpg"
 
 export function SectionCards() {
   return (
-    <div className="grid grid-cols-1 md:grid-cols-3 gap-6 mt-10 p-4">
+    <div className="grid grid-cols-1 md:grid-cols-3 gap-4 mt-10 p-10">
 
       <div className="relative w-full h-[490px]">
         <img className="w-full h-full object-cover" src={card_1} />
