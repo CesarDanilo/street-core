@@ -8,5 +8,6 @@ export default defineConfig({
     allowedHosts: [
       'pseudophilosophical-groutier-damian.ngrok-free.dev'
     ]
-  }
+  },
+  base: "./",
 })
